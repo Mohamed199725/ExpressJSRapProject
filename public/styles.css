@@ -1,0 +1,103 @@
+/* public/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards;
+    /* Apply animation effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Start from fully transparent */
+    }
+
+    to {
+        opacity: 1;
+        /* End at fully opaque */
+    }
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #3498db;
+    /* Blue color */
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    /* Smooth transition for color changes */
+}
+
+nav a:hover {
+    background-color: #e74c3c;
+    /* Red background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+h1,
+h2,
+p {
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f39c12;
+    /* Orange color for container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Additional styles for external icons */
+.social-icons i {
+    font-size: 30px;
+    color: #3498db;
+    /* Blue color */
+    margin: 0 10px;
+}
+
+.artist-image {
+    width: 230px;
+    /* Adjust the size of the artist image */
+}
+
+.album-image {
+    width: 200px;
+    /* Adjust the size of the album image */
+}
+
